@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>regresionlineal</class>
+ <widget class="QMainWindow" name="regresionlineal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>763</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>regresionlineal</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="calcular">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>390</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>calcular</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tabla">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>40</y>
+      <width>411</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>num</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>...x...</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>...b...</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>error</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>sr</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>390</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>salir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...X...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...Y...</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>114</width>
+      <height>334</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QDoubleSpinBox" name="xi1"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="QDoubleSpinBox" name="yi2"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QDoubleSpinBox" name="xi3"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QDoubleSpinBox" name="yi4"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QDoubleSpinBox" name="xi5"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QDoubleSpinBox" name="yi5"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDoubleSpinBox" name="yi6"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QDoubleSpinBox" name="yi7"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QDoubleSpinBox" name="yi1"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QDoubleSpinBox" name="xi2"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QDoubleSpinBox" name="yi3"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QDoubleSpinBox" name="xi4"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QDoubleSpinBox" name="xi6"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QDoubleSpinBox" name="xi7"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>763</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>regresionlineal</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>493</x>
+     <y>435</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>629</x>
+     <y>439</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
